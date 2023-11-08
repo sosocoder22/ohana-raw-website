@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            menu
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <style>
+            body{
+                background-image: linear-gradient(rgba(20, 84, 96,1),rgba(20, 84, 96, 1))
+            }
+            .hours_header{
+                
+                background-size: cover;
+            }
+
+           
+            
+            .footer{
+                margin-top: 250px;
+            }
+            .photo{
+                background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url("assets/menu/DSC_1307.JPG"); 
+                background-size: cover;
+                height:400px;
+                background-attachment: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .photo h1{
+                color:darkgray;
+                font-size: 40px;
+                font-family: Poppins;
+
+            }
+            .menu{
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 50px;
+                
+            }
+            .img{
+                display: flex;
+                justify-content: center;
+                margin-top: 100px;
+            }
+            button{
+                background-color: #efd4a2;
+                color:rgb(6, 77, 77);
+                box-shadow: 10px 10px;
+            }
+            button:hover{
+                background-color: black;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <section class="hours_header">
+            <nav>
+                <a href="index.html"><img src="logotmpb.PNG" width="300px" height="300px"/> </a>
+                <div class="nav-links">
+        
+                      <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="hours.html">HOURS AND LOCATION</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="index.html">CONTACT</a></li>
+                    </ul>
+                </div>
+             
+            </nav>
+
+
+
+            <div class="photo">
+                <h1>MENU</h1>
+            </div>
+
+            <div class="menu">
+                <div class="item1" data-aos="fade-up-left" data-aos-mirror="true" data-aos-duration="2000s">
+                <a href="#imageid"><button onclick="Bf()" ><h2>All Day Breakfast</h2></button></a>
+                </div>
+                <div class="item1" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000s">
+                    <a href="#imageid"> <button onclick="Pf()" ><h2>Parfaits And Healthy Greens</h2></button></a>
+                    </div>
+                    <div class="item1" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000s">
+                        <a href="#imageid"> <button onclick="Soup()" ><h2>Soup And Dimsum</h2></button></a>
+                        </div>
+                        <div class="item1" data-aos="fade-up-right" data-aos-mirror="true" data-aos-duration="2000s">
+                            <a href="#imageid"> <button onclick="Conti()" ><h2>Continental TitBit</h2></button></a>
+                            </div>
+                            
+            </div>
+            <div class="menu">
+                <div class="item1" data-aos="zoom-out-up" data-aos-mirror="true" data-aos-duration="2000s">
+                    <a href="#imageid"><button onclick="Kpg()" ><h2>Hamro Kalimpong</h2></button></a>
+                </div>
+                <div class="item1" data-aos="zoom-out" data-aos-mirror="true" data-aos-duration="2000s">
+                    <a href="#imageid"> <button onclick="Indian()" ><h2>Indian Delicacies</h2></button></a>
+                    </div>
+                    <div class="item1" data-aos="zoom-out" data-aos-mirror="true" data-aos-duration="2000s">
+                        <a href="#imageid"> <button onclick="Desi()" ><h2>Desi Khana</h2></button></a>
+                        </div>
+                        <div class="item1" data-aos="zoom-out-down" data-aos-mirror="true" data-aos-duration="2000s">
+                            <a href="#imageid"> <button onclick="Rice()" ><h2>Rice And Biryani</h2></button></a>
+                            </div>
+                            
+            </div>
+            <div class="menu">
+                <div class="item1" data-aos="flip-left" data-aos-mirror="true" data-aos-duration="3000s">
+                    <a href="#imageid"><button onclick="Euro()" ><h2>European Favourites</h2></button></a>
+                </div>
+                <div class="item1" data-aos="flip-right" data-aos-mirror="true" data-aos-duration="3000s">
+                    <a href="#imageid"> <button onclick="Greek()" ><h2>It's Greek</h2></button></a>
+                    </div>
+                    <div class="item1" data-aos="flip-left" data-aos-mirror="true" data-aos-duration="3000s">
+                        <a href="#imageid"> <button onclick="Italian()" ><h2>Italian Connection/Pizza</h2></button></a>
+                        </div>
+                        <div class="item1" data-aos="flip-right" data-aos-mirror="true" data-aos-duration="3000s">
+                            <a href="#imageid"> <button onclick="Mexi()" ><h2>Mexican Tex-Mex</h2></button></a>
+                            </div>
+                            <div class="item1" data-aos="flip-left" data-aos-mirror="true" data-aos-duration="3000s">
+                                <a href="#imageid"> <button onclick="Thai()" ><h2>Thai Wok</h2></button></a>
+                                </div>
+                            
+            </div>
+            <div class="menu">
+                
+                <div class="item1" data-aos="fade-up-left" data-aos-mirror="true" data-aos-duration="2000s">
+                    <a href="#imageid"> <button onclick="Desserts()" ><h2>Desserts</h2></button></a>
+                    </div>
+                    <div class="item1" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000s">
+                        <a href="#imageid"></a><button onclick="Shakes()" ><h2>Shakes</h2></button></a>
+                        </div>
+                        <div class="item1" data-aos="fade-up-right" data-aos-mirror="true" data-aos-duration="2000s">
+                            <a href="#imageid"> <button onclick="Mocktails()" ><h2>Mocktails</h2></button></a>
+                            </div>
+                            
+            </div>
+            <div class="menu">
+                <div class="item1" data-aos="zoom-out-up" data-aos-mirror="true" data-aos-duration="2000s">
+                    <a href="#imageid"><button onclick="Coffee()" ><h2>Coffee</h2></button></a>
+                </div>
+                <div class="item1" data-aos="zoom-out" data-aos-mirror="true" data-aos-duration="2000s">
+                    <a href="#imageid"> <button onclick="Frappe()" ><h2>Blended Frappe</h2></button></a>
+                    </div>
+                    <div class="item1" data-aos="zoom-out-down" data-aos-mirror="true" data-aos-duration="2000s">
+                        <a href="#imageid"> <button onclick="Tea()" ><h2>Tea-Pots</h2></button></a>
+                        </div>
+                        
+                            
+            </div>
+
+            
+
+            <div class="img">
+            <img id="imageid" src="assets/menu/bf.png" width="700px" height="1000px">
+            </div>
+            <div class="img">
+                <img id="image" src="assets/menu/Screenshot 2023-11-04 154259.png" width="700px" height="1000px">
+                </div>
+            <script>
+                var myImage=document.querySelector("#imageid")
+                var mage=document.querySelector("#image")
+                function Bf(){
+                    myImage.src="assets/menu/bf.png"
+
+                }
+                function Pf(){
+                    myImage.src="assets/menu/pf.png"
+                }
+                function Soup(){
+                    myImage.src="assets/menu/soup.png"
+                }
+                function Conti(){
+                    myImage.src="assets/menu/conti.png"
+                }
+                function Kpg(){
+                    myImage.src="assets/menu/kpg.png"
+                }
+                function Indian(){
+                    myImage.src="assets/menu/in.png"
+                    mage.src="assets/menu/id.png"
+
+                    
+                }
+                function Desi(){
+                    myImage.src="assets/menu/desi.png"
+                    mage.src="assets/menu/desi1.png"
+
+                    
+                }
+                function Rice(){
+                    myImage.src="assets/menu/rice.png"
+                }
+                function Euro(){
+                    myImage.src="assets/menu/euro.png"
+                }
+                function Greek(){
+                    myImage.src="assets/menu/greek.png"
+                }
+                function Italian(){
+                    myImage.src="assets/menu/italy.png"
+                }
+                function Mexi(){
+                    myImage.src="assets/menu/mexi.png"
+                }
+                function Thai(){
+                    myImage.src="assets/menu/thai.png"
+                }
+                function Desserts(){
+                    myImage.src="assets/menu/desserts.png"
+                }
+                function Shakes(){
+                    myImage.src="assets/menu/shakes.png"
+                }
+                function Mocktails(){
+                    myImage.src="assets/menu/mocktails.png"
+                }
+                function Coffee(){
+                    myImage.src="assets/menu/coffee.png"
+                }
+                function Frappe(){
+                    myImage.src="assets/menu/frappe.png"
+                }
+                function Tea(){
+                    myImage.src="assets/menu/tea.png"
+                }
+            </script>
+        
+
+
+
+           
+
+
+        </section>
+        <section>
+            <footer>
+              <div class="footer">
+                 <a href="index.html"><img src="logotmpb.PNG" width="200px" height="200px"></a> 
+                  <div class="vline"></div>
+                 <article> <h3><span style="color:rgb(252, 252, 252)"> The Melting Pot Bistro </span></h3> 
+                   <p> Big Will Mart,<br> <span style="margin-left: -70px">1st Floor,Shahid DB Giri Road, </span><br> <span style="margin-left: -30px"> District: Kalimpong</span> <br> <br>
+                   
+                 </article> 
+      
+            
+                    <div class="line">
+                   
+                     <a href="https://www.facebook.com/profile.php?id=61550660120975&mibextid=b06tZ0"><img src="fb.png" width="30px" height="30px"> 
+                       <a href="https://instagram.com/themeltingpotbistro.kpg?igshid=OGQ5ZDc2ODk2ZA=="><img src="insta.png" width="30px" height="30px"><br><br></a> 
+                   </article>
+                    </div>
+
+                   <div class="mob">
+                    <article><p>mobile: +91 81019 80137 <br>email us at: <a href="mailto:themeltingpotkalimpong@gmail.com">themeltingpotkalimpong@gmail.com <br><br></a></p>
+                        <a href="https://www.google.com/maps/place/The+Melting+Pot+Bistro+Kalimpong/@27.0698852,88.4706317,15z/data=!4m6!3m5!1s0x39e423e1fc189e47:0x1dac6991bf214321!8m2!3d27.0698852!4d88.4706317!16s%2Fg%2F11vdv_1ly2?entry=ttu"> <span style="margin-left: 73px"> <mark>Google Map</mark> </span></a></p></article>
+                   </div>
+         
+              </div>
+      
+              <div class="copyright">
+                <p>&copy 2023-2024 The Melting Pot Bistro | All rights reserved. <br><br> </p><p> Powered By PixelBridge Technologies <br><br></p>
+              </div>
+            </footer>
+          </section>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+    </body>
+</html>

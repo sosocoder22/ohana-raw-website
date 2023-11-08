@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title> Ohana on web</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    </head>
+
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="logotmpb.PNG" width="300px" height="300px"/> </a>
+                <div class="nav-links">
+                    
+                      <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="hours.html">HOURS AND LOCATION</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+             
+            </nav>
+          </section>
+            <section>
+                <div class="slideshow-container">
+            
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                          <img src="assets/EZU01388.jpg" style="width:100%;height:700px">
+                        <div class="text">Wholesome</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                        <img src="assets/EZU01410.jpg" style="width:100%;height:700px">
+                      <div class="text">Tranquil</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                        <img src="tmpb.jpeg" style="width:100%;height:700px">
+                      <div class="text">Warm</div>
+                    </div>
+                    
+                </div>
+                 <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 4000); // Change image every 2 seconds
+                    }
+                  </script>
+                 
+
+            
+            <div class="main-text">
+                <p>The Melting Pot Bistro, where culinary creativity meets cozy ambiance. Join us for a delightful fusion of flavors and a warm, inviting atmposphere that brings people together over exceptional food and shared moments.
+                    
+                </p>
+                <a href="" class="visit-btn">VISIT US TO KNOW MORE</a>
+            </div>
+
+        </section>
+
+        <section class="vidd">
+            <div class="vid">
+                <video autoplay loop class="vid">
+                    <source src="tmpb.MP4"/>
+                    <script>
+                        var video = document.currentScript.parentElement;
+                        video.volume = 0.05;
+                        </script>
+                </video>
+            </div>
+        </section>
+
+        <section>
+            <footer>
+              <div class="footer">
+                <div class="vline"><a href="index.html"><img src="logotmpb.PNG" width="200px" height="200px"></a> 
+                  </div>
+                 <article> <h3><span style="color:rgb(252, 252, 252)"> The Melting Pot Bistro </span></h3> 
+                   <p> Big Will Mart,<br> <span style="margin-left: -70px">1st Floor,Shahid DB Giri Road, </span><br> <span style="margin-left: -30px"> District: Kalimpong</span> <br> <br>
+                   
+                 </article> 
+      
+            
+                    <div class="line">
+                   
+                     <a href="https://www.facebook.com/profile.php?id=61550660120975&mibextid=b06tZ0"><img src="fb.png" width="30px" height="30px"> 
+                       <a href="https://instagram.com/themeltingpotbistro.kpg?igshid=OGQ5ZDc2ODk2ZA=="><img src="insta.png" width="30px" height="30px"><br><br></a> 
+                
+                    </div>
+
+                   <div class="mob">
+                    <article><p>mobile: +91 81019 80137 <br>email us at: <a href="mailto:themeltingpotkalimpong@gmail.com">themeltingpotkalimpong@gmail.com <br><br></a></p></article>
+                        <div class="ma"><a href="https://www.google.com/maps/place/The+Melting+Pot+Bistro+Kalimpong/@27.0698852,88.4706317,15z/data=!4m6!3m5!1s0x39e423e1fc189e47:0x1dac6991bf214321!8m2!3d27.0698852!4d88.4706317!16s%2Fg%2F11vdv_1ly2?entry=ttu"> <span style="margin-left: 73px"> <mark>Google Map</mark> </span></a></div>
+                   </div>
+         
+              </div>
+      
+              <div class="copyright">
+                <p>&copy 2023-2024 The Melting Pot Bistro | All rights reserved. <br><br> </p><p> Powered By PixelBridge Technologies <br><br></p>
+              </div>
+            </footer>
+          </section>
+
+
+    </body>
+
+</html>
+
+
+
+
+
+
+

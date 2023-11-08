@@ -1,0 +1,601 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Sono', sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url("assets/EZU01388.jpg");
+    overflow-x: hidden;
+}
+
+.header{
+    margin: -30px;
+
+  
+}
+@media (max-width: 768px){
+    .header img{
+        width:200px;
+        height: 200px;
+    }
+}
+/* Default styles for footer */
+footer {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6));
+    height: 400px;
+}
+
+footer .footer img {
+    margin: -40px;
+    margin-left: 43%;
+    margin-top: 0px;
+  
+}
+
+/* Media query for screens up to 768px wide (typically mobile devices) */
+@media (max-width: 768px) {
+    footer {
+        background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6));
+        height: 600px;
+        width:390px
+    }
+    footer .footer img {
+        margin: 0; /* Reset margins for mobile screens */
+        margin-left: auto; /* Center-align the image */
+        display: inline-block; /* Make the image a block-level element */
+        max-width: 100%; /* Ensure the image fits within the container */
+    }
+    footer .footer .vline img {
+        margin: 0; /* Reset margins for mobile screens */
+        margin-left:25% ;/* Center-align the image */
+        display: block; /* Make the image a block-level element */
+        max-width: 100%; /* Ensure the image fits within the container */
+    }
+}
+
+
+footer article {
+    margin: -40px;
+    margin-left: 41%;
+    margin-top: 0px;
+}
+
+footer p, footer a {
+    color: rgb(250, 249, 249);
+    margin-top: 0px;
+}
+
+footer p {
+    margin-left: 60px;
+}
+
+/* Media query for screens up to 768px wide (typically mobile devices) */
+@media (max-width: 768px) {
+    footer article, footer p {
+        margin: 0; /* Reset margins for mobile screens */
+        margin-left: 10%; /* Center-align the elements */
+        display: block; /* Make the elements block-level */
+        text-align: center; /* Center-align the text for improved readability */
+    }
+}
+
+
+
+
+
+
+
+footer .line p {
+    margin-left: 100px;
+}
+
+footer .line {
+    margin-left: 44%;
+}
+
+footer .line img {
+    margin-left: 5%;
+}
+
+/* Media query for screens up to 768px wide (typically mobile devices) */
+@media (max-width: 768px) {
+    footer .line p, footer .line, footer .line img {
+        margin: 0; /* Reset margins for mobile screens */
+        margin-left: auto; /* Center-align the elements */
+        text-align: center; /* Center-align the text for improved readability */
+    }
+}
+
+
+
+footer .mob p {
+    margin: -40px;
+    margin-left: -60%;
+    margin-top: 20px;
+}
+
+footer .copyright p {
+    margin: 0px;
+    margin-left: 60%;
+    margin-top: -20px;
+}
+footer .mob .ma a{
+    margin-left: 625px;
+}
+/* Media query for screens up to 768px wide (typically mobile devices) */
+@media (max-width: 768px) {
+    footer .mob p, footer .copyright p {
+        margin: 0; /* Reset margins for mobile screens */
+        margin-left: 2%; /* Center-align the elements */
+        text-align: center; /* Center-align the text for improved readability */
+    }
+    footer .mob article{
+        margin-left: 20px;
+    }
+    footer .mob .ma a{
+        margin-left: 65px;
+    }
+}
+
+*{box-sizing: border-box;}
+/*body {font-family: Verdana, sans-serif;}*/
+.mySlides {display: none;}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0.5% 0.5%;
+    margin-right: 530px;
+
+
+}
+
+.nav-links{
+    flex:1;
+    text-align: right;
+    list-style: none;
+    padding: 0.5% 0.5%;
+    
+}
+
+.nav-links ul li{
+list-style: none;
+display:inline-block;
+position: relative;
+padding:0.5% 1%;
+}
+
+.nav-links ul li a{
+    color:beige;
+    text-decoration: none;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: brown;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Default styles for the slideshow container */
+.slideshow-container {
+    max-width: 60%;
+    min-height: 500px;
+    position: relative;
+    margin: auto;
+    margin-top: -80px;
+    background-image: linear-gradient(rgb(41, 58, 157), rgb(46, 44, 57));
+}
+/* Default styles for the images within the slideshow */
+@media (max-width: 768px) {
+    .slideshow-container .mySlides img{
+        max-width: 100%; /* Adjust the width to fit the screen width */
+        max-height:300px; /* Adjust the minimum height for smaller screens */
+        margin-top: 0px;
+        margin-left: 0px; /* Remove the top margin on smaller screens */
+    }
+}
+
+/* Media query for screens up to 768px wide (typically mobile devices) */
+@media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%; /* Adjust the width to fit the screen width */
+        min-height: 300px; /* Adjust the minimum height for smaller screens */
+        margin-top: 50px;
+        margin-left: 30px; /* Remove the top margin on smaller screens */
+    }
+}
+
+
+.text-box{
+    width:50%;
+    position:absolute;
+    color: rgb(255, 255, 255);      
+    top:30%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text {
+    color: rgb(255, 255, 255);
+    font-size:80px;
+    padding: 8px 12px;
+    position: absolute;
+    
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    font-family:'Times New Roman';
+    font-weight: none;
+   
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+.text-box h1{
+    font-size: 50px;
+    font-weight: 100;
+}
+/* Default styles for .main-text */
+.main-text {
+    width: 50%;
+    position: relative;
+    color: rgb(255, 255, 255);
+    top: 0%;
+    left: 25%;
+    text-align: center;
+}
+
+.main-text p {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px 30px;
+}
+
+.main-text a {
+    background-color: goldenrod;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 5px 5px;
+    color: black;
+}
+
+/* Media query for screens up to 768px wide (typically mobile devices) */
+@media (max-width: 768px) {
+    .main-text {
+        width: 100%; /* Adjust the width to fit the screen width */
+        left: 10px; /* Remove the left offset for smaller screens */
+    }
+
+    .main-text p {
+        font-size: 16px; /* Reduce the font size for better mobile readability */
+        margin: 5px 0px 20px; /* Adjust margins for better spacing on smaller screens */
+    }
+
+    .main-text a {
+        font-size: 16px; /* Reduce the font size for better mobile readability */
+    }
+}
+
+
+.text-box a:hover{
+    background-color:turquoise;
+    text-decoration: none;
+    font-size: 20px;
+    padding:5px 5px 5px;
+    color:black;
+}
+
+
+
+/* Default styles for video container and video element */
+.vid {
+    max-width: 100%; /* Ensure the video container is responsive and takes the full width of its parent */
+    margin: 0 auto; /* Center the video horizontally */
+}
+
+.video {
+    max-width: 100%; /* Ensure the video element is responsive and takes the full width of its container */
+    height: auto; /* Automatically adjust the height to maintain the video's aspect ratio */
+}
+
+/* Media query for screens up to 768px wide (typically mobile devices) */
+@media (max-width: 768px) {
+    .vid {
+        max-width: 100%;
+        margin: 15px; /* Reduce the width of the video container for smaller screens */
+    }
+    .video {
+        max-width: 100%; /* Keep the video element responsive */
+    }
+}
+
+/* Media query for screens between 768px and 1200px wide (typically tablets) */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .vid {
+        max-width: 80%; /* Adjust the video container width for medium-sized screens */
+    }
+}
+
+/* Media query for screens larger than 1200px (typically desktops) */
+@media (min-width: 1201px) {
+    .vid {
+        max-width: 800px; /* Set a fixed maximum width for the video container on larger screens */
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 40px;
+    }
+    .text-box p{
+        font-size: 10px;
+        
+    }
+    .text-box a{
+        font-size: 10px;
+    }
+    .nav-links{
+        position: absolute;
+        padding:0.5% 1%;
+        text-align: left ;
+        z-index: 2;
+        background:transparent;
+        height:100vh;
+        width:100px;
+        top:0px;
+        right:0px;
+      
+        }
+    .nav-links.active {
+        display: block;
+        }
+    body {
+        overflow-x: hidden; /* Disable horizontal scrolling */
+    }
+    
+
+}
+
+/* Default styles for .hoursHead */
+.hoursHead {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hoursHead h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(198, 155, 102);
+    font-size: 45px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.hoursText {
+    color: beige;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hoursText p {
+    font-weight: lighter;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    position: relative;
+    left: 25%;
+    color: beige;
+}
+
+.hoursText ul li {
+    display: block;
+    position: relative;
+    left: 5%;
+    color: rgb(231, 197, 159);
+}
+
+/* Media query for screens up to 768px wide (typically mobile devices) */
+@media (max-width: 768px) {
+    .hoursText {
+        font-size: 18px; /* Reduce font size for better mobile readability */
+        top: 20%; /* Adjust the top position for better mobile layout */
+    }
+    
+    .hoursText p {
+        font-size: 16px; /* Reduce font size for better mobile readability */
+        left: 20%; /* Adjust the left position for better mobile layout */
+    }
+    
+    .hoursText ul li {
+        font-size: 16px; /* Reduce font size for better mobile readability */
+        left: 10%; /* Adjust the left position for better mobile layout */
+    }
+}
+ 
+
+.locText{
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    color: beige;
+    font-size: 23px;
+   
+}
+.locText p{
+    text-decoration: underline;
+    text-decoration-color: brown;
+    position: relative;
+    left:27%
+}
+.locText ul li{
+   display: block;
+   position: relative;
+   left:-6%;
+   text-align: center;
+   color:rgb(231, 197, 159); ;
+}
+.map{
+    position: absolute;
+    left: 50%;
+    top:100%;
+    transform: translate(-50%,-50%);
+    color: rgba(22,22,22,0.7);
+}
+
+
+<!--gallery-->
+.slider{
+    height:250px;
+    margin:auto;
+    position: relative;
+    width:90%;
+    display: grid;
+    place-items: center;
+   
+}
+.slide-track{
+    display: flex;
+    width:calc(250px*18);
+    animation: scroll 40s linear infinite;
+}
+.slide-track:hover{
+    animation-play-state: paused;
+}
+.slide{
+    height:200px;
+    width:250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+.slider::before,
+.slider::after{
+    background: linear-gradient(to right,rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
+    content: '';
+    height: 50%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+
+}
+
+.slider::before{
+    left: 0;
+    top:30%
+
+}
+.slider::after{
+    right: 0;
+    top:30%;
+    transform: rotateZ(180deg);
+
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
+    }
+    
+}
+
+.slider1{
+    height:250px;
+    margin:auto;
+    margin-top: 150px;
+    position: relative;
+    width:90%;
+    display: grid;
+    place-items: center;
+}
+.slide-track1{
+    display: flex;
+    width:calc(250px*18);
+    animation: scroll1 40s linear infinite;
+}
+.slide-track1:hover{
+    animation-play-state: paused;
+}
+.slide1{
+    height:200px;
+    width:250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+.slider1::before,
+.slider1::after{
+    background: linear-gradient(to right,rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
+    content: '';
+    height: 140%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+
+}
+
+.slider1::before{
+    left: -5%;
+    top:-20%
+
+}
+.slider1::after{
+    right: -5%;
+    top:-20%;
+    transform: rotateZ(180deg);
+
+}
+@keyframes scroll1 {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
+    }
+    
+}
+
+.staff{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+.ambiance{
+    color: white;
+display: flex;
+justify-content: center;
+
+border:dotted white
+}
+
